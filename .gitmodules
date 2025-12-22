@@ -1,0 +1,3 @@
+[submodule "foundry-nft-f23/lib/openzeppelin-contracts"]
+	path = foundry-nft-f23/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts

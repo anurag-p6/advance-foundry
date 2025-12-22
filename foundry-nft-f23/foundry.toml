@@ -2,5 +2,20 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+fs_permissions = [
+    { access = "read", path = "./img/" },
+    { access = "read", path = "./broadcast" },
+    { access = "read", path = "./lib/forge-devops" }
+]
+
+remapping = [
+   '@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/'
+]
+
+[rpc_endpoints]
+arbitrum-sepolia = "${ARBITRUM_SEPOLIA_RPC}"
+
+[etherscan]
+arbiscan = { key = "${ETHERSCAN_API_KEY}" }
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
